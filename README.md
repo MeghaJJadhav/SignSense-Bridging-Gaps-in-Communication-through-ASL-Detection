@@ -30,7 +30,7 @@ movements (Note: LSTM stack is not provided in the repository).
 -Real-time Testing
 
 -Use realtimetest_2.0.ipynb for real-time ASL alphabet recognition.
-
+note - ignore model files other than model.p 
 
 
 #Usage
