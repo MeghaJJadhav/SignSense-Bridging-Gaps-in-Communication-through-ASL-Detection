@@ -5,9 +5,9 @@ Innovative project leveraging Random Forest &amp; Logistic Regression for real-t
 
 #Abstract
 
-SignSense utilizes Random Forest and Logistic Regression models for ASL alphabet recognition. The project also experimented with LSTMs for handling composite hand 
+SignSense utilizes Random Forest and Logistic Regression models for ASL alphabet recognition. The project also experimented with CNN for handling composite hand 
 
-movements (Note: LSTM stack is not provided in the repository).
+movements (Note: CNN stack is not provided in the repository).
 
 
 
@@ -59,7 +59,7 @@ Train Logistic Regression: train.ipynb
 
 -Evolve the project into a user-friendly web application for broader accessibility.
 
--Open to collaboration and ideas for further improvement and implementation of LSTMs.
+-Open to collaboration and ideas for further improvement and implementation of CNN.
 
 
 
