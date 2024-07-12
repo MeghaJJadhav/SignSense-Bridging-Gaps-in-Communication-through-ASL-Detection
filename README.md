@@ -44,15 +44,19 @@ note - ignore model files other than model.p
 1)Explore create_dtset.ipynb for dataset preprocessing.
 
 2)What is MediaPipe?
+
 MediaPipe is an open-source framework developed by Google for building multimodal (e.g., video, audio) machine learning pipelines. It provides a variety of pre-built solutions for real-time applications, such as hand tracking, face detection, and object detection.
 
 3)Why Convert Images to RGB?
+
 The cv2.imread function from OpenCV reads images in BGR (Blue, Green, Red) format by default. However, MediaPipe requires images in RGB (Red, Green, Blue) format for accurate processing. Converting images to RGB ensures that the color channels are in the correct order for MediaPipe to process them accurately. Incorrect color channels could lead to poor landmark detection performance.
 
 4)What is Being Extracted from the Image and How?
+
 MediaPipe processes the RGB image to detect hand landmarks. If a hand is detected, MediaPipe provides the coordinates of 21 key points (landmarks) on the hand, representing joints and tips of fingers.These coordinates are essential for understanding the hand's pose and gestures. Each landmark provides a (x, y) coordinate in the image space, which can be used to distinguish different hand gestures.
 
 5)Why is Normalization Done?
+
 Normalization involves adjusting the landmark coordinates so that the hand's position is consistent across different images. Specifically, the code normalizes the coordinates by subtracting the minimum x and y values from each coordinate.
 
 
